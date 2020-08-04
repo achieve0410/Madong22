@@ -15,7 +15,6 @@ $to = "achieve0410@gmail.com"; // Add your email address inbetween the "" replac
 $subject = "나는  $name 야띠-";
 $body = "나는 $message1 하고싶고, 내용은 $message2야. \n\n첨부는 $message3를 할게.";
 $header = "From: noreply@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$header .= "Reply-To: $name";
 
 if(!mail($to, $subject, $body, $header)){
   http_response_code(500);
